@@ -1,0 +1,45 @@
+# Хороший героин
+
+- type: reaction
+  id: GoodHerione
+  impact: Medium
+  reactants:
+    SpaceDrugs:
+      amount: 1
+    Hydrogen:
+      amount: 1
+    Morphine:
+      amount: 2
+  products:
+    GoodHeroine: 1
+
+# Плохой героин(палёный)
+
+- type: reaction
+  id: BadHeroine
+  impact: Medium
+  reacrants:
+    Morphine:
+      amount: 1
+    SpaceDrugs:
+      amount: 1
+    Hydrogen:
+      amount: 1
+  products:
+    BadHeroine: 1
+
+- type: reaction
+  id: Desoxyephedrine
+  impact: Medium
+  minTemp: 370
+  reactants:
+    Ephedrine:
+      amount: 2
+    Carbon:
+      amount: 2
+    Iodine:
+      amount: 2
+    Morphine:
+      amount: 2
+  products:
+    Desoxyephedrine: 1

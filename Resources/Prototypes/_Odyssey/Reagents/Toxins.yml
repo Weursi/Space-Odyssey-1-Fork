@@ -1,0 +1,59 @@
+# Хороший героин, наносит меньше ядов и практически не замедляет
+
+- type: reagent
+  id: GoodHeroine
+  name: героин
+  group: Narcotics
+  desc: Сильнейший наркотик во всей галактике. 
+  physicalDesc: reagent-physical-desc-opaque
+  flavor: bitter
+  color: "#c8cfcb"
+  plantMetabolism:
+  - !type:PlantAdjustToxins
+    amount: 10
+  metabolisms:
+    Poison:
+      effects:
+      - !type:GenericStatusEffect
+        key: SeeingRainbows
+        component: SeeingRainbows
+        type: Add
+        time: 30
+        refresh: false
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: 0.5
+      - !type:MovespeedModifier
+        walkSpeedModifier: 0.9
+        sprintSpeedModifier: 0.9
+
+# Плохой героин, наносит больше ядов и замедляет сильнее
+
+- type: reagent
+  id: BadHeroine
+  name: героин
+  group: Narcotics
+  desc: Похоже на сильнейший наркотик во всей галактике. 
+  physicalDesc: reagent-physical-desc-opaque
+  flavor: bitter
+  color: "#c8cfcb"
+  plantMetabolism:
+  - !type:PlantAdjustToxins
+    amount: 10
+  metabolisms:
+    Poison:
+      effects:
+      - !type:GenericStatusEffect
+        key: SeeingRainbows
+        component: SeeingRainbows
+        type: Add
+        time: 10
+        refresh: false
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: 2.5
+      - !type:MovespeedModifier
+        walkSpeedModifier: 0.5
+        sprintSpeedModifier: 0.5
