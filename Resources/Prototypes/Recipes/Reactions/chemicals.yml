@@ -297,16 +297,14 @@
   impact: Medium
   minTemp: 370
   reactants:
-    Morphine:
+    Ammonia:
       amount: 1
-    SpaceDrugs:
+    Lithium:
       amount: 1
     Ephedrine:
       amount: 1
-    Phosphorus:
-     amount: 1
   products:
-    Desoxyephedrine: 4 #I kinda remember having to heat this up, and if you heated it up too much, it went boom, I can't remember the specific values tho.
+    Desoxyephedrine: 3 #I kinda remember having to heat this up, and if you heated it up too much, it went boom, I can't remember the specific values tho.
 
 - type: reaction
   id: Stimulants
